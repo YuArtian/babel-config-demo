@@ -35,7 +35,3 @@ let arr2 = arr.map((item) => {
   console.log('arr item', item)
   return item
 })
-
-const p1 = new Promise()
-
-function* gen1() {}

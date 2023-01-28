@@ -35,14 +35,10 @@
  * 3
  * @babel/preset-env +
  */
-const config = {
+/* const config = {
   presets: [
     [
       "@babel/preset-env",
-      // {
-      //   useBuiltIns: "usage",
-      //   corejs: 3
-      // }
     ]
   ],
   plugins: [
@@ -56,8 +52,65 @@ const config = {
       }
     ]
   ]
-}
+} */
+/**
+ * 4
+ * 只有 @babel/plugin-transform-runtime
+ */
+/* const config = {
+  plugins: [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        // "corejs": 3,
+        "corejs": false,
+        "helpers": true, // 提取 helpers
+      }
+    ]
+  ]
+} */
+/**
+ * 5
+ *
+ */
+/* const config = {
+  plugins: [
+    ["@babel/plugin-transform-arrow-functions"],
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        // "corejs": 3,
+        "corejs": false,
+        "helpers": true, // 提取 helpers
+      }
+    ]
+  ]
+} */
 
+/**
+ * 6
+ *
+ */
+const config = {
+  presets: [
+    [
+      "@babel/preset-env",
+      {
+        useBuiltIns: "usage",
+        corejs: 3
+      }
+    ]
+  ],
+  plugins: [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        corejs: false,
+        helpers: true,
+      }
+    ]
+  ]
+}
 
 
 

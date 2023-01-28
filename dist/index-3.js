@@ -1,18 +1,6 @@
 "use strict";
 
-var _regeneratorRuntime2 = require("@babel/runtime/regenerator");
-require("core-js/modules/es.reflect.construct.js");
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
-require("core-js/modules/es.array.includes.js");
-require("core-js/modules/es.array.map.js");
-require("core-js/modules/es.object.to-string.js");
-require("core-js/modules/es.promise.js");
-require("core-js/modules/es.array.iterator.js");
-require("core-js/modules/es.string.iterator.js");
-require("core-js/modules/es.weak-map.js");
-require("core-js/modules/web.dom-collections.iterator.js");
-require("core-js/modules/es.weak-set.js");
 var _inherits2 = _interopRequireDefault(require("@babel/runtime/helpers/inherits"));
 var _possibleConstructorReturn2 = _interopRequireDefault(require("@babel/runtime/helpers/possibleConstructorReturn"));
 var _getPrototypeOf2 = _interopRequireDefault(require("@babel/runtime/helpers/getPrototypeOf"));
@@ -21,7 +9,6 @@ var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/creat
 var _defineProperty2 = _interopRequireDefault(require("@babel/runtime/helpers/defineProperty"));
 var _classPrivateFieldGet2 = _interopRequireDefault(require("@babel/runtime/helpers/classPrivateFieldGet"));
 var _classPrivateFieldSet2 = _interopRequireDefault(require("@babel/runtime/helpers/classPrivateFieldSet"));
-var _marked = /*#__PURE__*/_regeneratorRuntime2.mark(gen1);
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
 function _classPrivateMethodInitSpec(obj, privateSet) { _checkPrivateRedeclaration(obj, privateSet); privateSet.add(obj); }
@@ -84,13 +71,3 @@ var arr2 = arr.map(function (item) {
   console.log('arr item', item);
   return item;
 });
-var p1 = new Promise();
-function gen1() {
-  return _regenerator.default.wrap(function gen1$(_context) {
-    while (1) switch (_context.prev = _context.next) {
-      case 0:
-      case "end":
-        return _context.stop();
-    }
-  }, _marked);
-}

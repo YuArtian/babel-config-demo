@@ -1,0 +1,28 @@
+{
+  "name": "babel-config-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "babel ./index.js --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuArtian/babel-config-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuArtian/babel-config-demo/issues"
+  },
+  "homepage": "https://github.com/YuArtian/babel-config-demo#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "core-js": "^3.27.2"
+  }
+}

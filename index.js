@@ -1,4 +1,7 @@
 
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
+
 class A {
   #privateField = ''
   static STATIC_FIELD = 0
@@ -36,6 +39,8 @@ let arr2 = arr.map((item) => {
   return item
 })
 
-const p1 = new Promise()
+const p1 = new Promise(()=>{}, ()=>{})
 
-function* gen1() {}
+function* gen1() { }
+
+typeof p1

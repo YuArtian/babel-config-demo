@@ -91,28 +91,53 @@
  * 6
  *
  */
+// const config = {
+//   presets: [
+//     [
+//       "@babel/preset-env",
+//       {
+//         // useBuiltIns: "usage",
+//         // corejs: 3
+//       }
+//     ]
+//   ],
+//   plugins: [
+//     [
+//       "@babel/plugin-transform-runtime",
+//       {
+//         corejs: 3,
+//         helpers: true,
+//       }
+//     ]
+//   ]
+// }
+/**
+ * 7
+ */
 const config = {
   presets: [
     [
       "@babel/preset-env",
       {
-        useBuiltIns: "usage",
+        useBuiltIns: "entry",
+        // useBuiltIns: "usage",
+        // corejs: {
+        //   "version": 3,
+        //   "proposals": true
+        // }
         corejs: 3
       }
     ]
   ],
   plugins: [
-    [
-      "@babel/plugin-transform-runtime",
-      {
-        corejs: false,
-        helpers: true,
-      }
-    ]
+    // [
+    //   "@babel/plugin-transform-runtime",
+    //   {
+    //     corejs: false,
+    //   }
+    // ]
   ]
 }
-
-
 
 
 export default config

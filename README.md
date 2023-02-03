@@ -75,3 +75,11 @@ babel plugin 并不是只能转义代码，可以有更多的功能
 ### @babel/plugin-transform-runtime
 可以帮助抽离 babel 引入的 helper 函数，优化代码体积
 
+
+
+
+
+
+
+## 配置文件
+> https://babel.docschina.org/docs/en/config-files/#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B
